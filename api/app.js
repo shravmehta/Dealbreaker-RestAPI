@@ -64,7 +64,7 @@ app.get('/*', (req,res)=>{
 });
 
 //connect to MongoDB atlas
-mongoose.connect(`mongodb+srv://shrav:0S6ceNdJG1cp0Bne@eventsdatacluster-si5ri.mongodb.net/dealDB?retryWrites=true&w=majority`).then(()=>{
+mongoose.connect(`mongodb+srv://MONGO_USERNAME:MONGO_PASSWORD@eventsdatacluster-si5ri.mongodb.net/DATABASE?retryWrites=true&w=majority`).then(()=>{
     app.listen('5000');
     console.log("listening at 5000 and connected to mongoDB");
     
